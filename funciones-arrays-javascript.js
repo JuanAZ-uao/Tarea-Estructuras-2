@@ -196,4 +196,3 @@ function dividirEnChunks(array, tamaño) {
 let arrChunks = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log('Chunks:', dividirEnChunks(arrChunks, 3));
 
-console.log('\n=== FIN DEL ARCHIVO ===');
