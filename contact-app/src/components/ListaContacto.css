@@ -1,0 +1,11 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list-empty {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+}
