@@ -1,0 +1,150 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* Layout principal */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.app-header h1 { font-size: 2.2rem; color: #38bdf8; }
+.app-header p  { color: #94a3b8; margin-top: 0.3rem; }
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjeta */
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #334155;
+}
+
+.card h2 { font-size: 1.15rem; margin-bottom: 0.25rem; color: #f1f5f9; }
+
+.hint {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Sección vehículo destacado */
+.featured {
+  grid-column: 1 / -1;
+  border-color: #0ea5e9;
+  background: #0c2035;
+}
+
+.featured-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #0f3058;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.featured-card .modelo { font-size: 1.4rem; font-weight: 700; color: #38bdf8; }
+.featured-card .placa  { background: #1e3a5f; padding: 0.3rem 0.7rem; border-radius: 6px; font-family: monospace; }
+.featured-card .tarifa { margin-left: auto; font-size: 1.1rem; color: #86efac; font-weight: 600; }
+
+/* Formularios */
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.5rem 0.75rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus { border-color: #38bdf8; }
+
+/* Botones */
+.btn-add {
+  padding: 0.5rem 1.1rem;
+  background: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.btn-add:hover { background: #0369a1; }
+
+.btn-rent {
+  padding: 0.3rem 0.8rem;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: background 0.2s;
+}
+.btn-rent:hover { background: #15803d; }
+
+.btn-remove {
+  padding: 0.3rem 0.8rem;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: background 0.2s;
+}
+.btn-remove:hover { background: #b91c1c; }
+
+/* Listas */
+.list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  border: 1px solid #1e3a5f;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.history-item { flex-direction: column; align-items: flex-start; }
+.date { font-size: 0.75rem; color: #64748b; }
+.empty { color: #475569; font-style: italic; font-size: 0.9rem; }
