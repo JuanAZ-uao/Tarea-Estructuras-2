@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+.navbar {
+  box-shadow: $card-shadow;
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+}

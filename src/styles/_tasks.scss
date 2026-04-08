@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+.task-form {
+  .form-control {
+    border-radius: $border-radius;
+  }
+
+  .btn {
+    border-radius: $border-radius;
+  }
+}
+
+.task-item {
+  border: none;
+  border-radius: $border-radius;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: $card-shadow;
+  }
+
+  &.task-done {
+    background-color: #f8f9fa;
+    opacity: 0.75;
+  }
+
+  .task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  h6 {
+    font-weight: 600;
+  }
+
+  .btn-sm {
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+}
