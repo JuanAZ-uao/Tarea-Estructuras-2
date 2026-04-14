@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.controles {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.grupo-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.grupo-control h3 {
+  margin: 0;
+  color: #555;
+}
+
+.grupo-control input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 120px;
+  text-align: center;
+}
+
+.grupo-control button {
+  padding: 8px 20px;
+  background: #4a90d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.grupo-control button:hover {
+  background: #357abd;
+}
+
+.encontrado {
+  color: #2e7d32;
+  font-weight: bold;
+  margin: 4px 0 0;
+}
+
+.no-encontrado {
+  color: #c62828;
+  font-weight: bold;
+  margin: 4px 0 0;
+}
+
+.recorridos {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+}
+
+.recorridos strong {
+  color: #4a90d9;
+}
+
+.arbol-contenedor {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+}
