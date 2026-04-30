@@ -1,0 +1,151 @@
+/* ── App layout ─────────────────────────────────────── */
+.app-header {
+  background: #1a237e;
+  color: #fff;
+  padding: 20px 32px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+}
+
+.app-header p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Graph section ───────────────────────────────────── */
+.graph-section h2,
+.city-list-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  color: #1a237e;
+}
+
+.graph-container {
+  background: #0d1b2a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* ── City list panel ────────────────────────────────── */
+.city-list-panel {
+  background: #f5f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.city-selector {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.city-btn {
+  padding: 8px 18px;
+  border: 2px solid #3f51b5;
+  background: #fff;
+  color: #3f51b5;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.city-btn:hover,
+.city-btn.active {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.people-list h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.city-name {
+  color: #3f51b5;
+  font-weight: 700;
+}
+
+.count {
+  color: #888;
+  font-weight: 400;
+}
+
+.no-people {
+  color: #888;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th {
+  background: #3f51b5;
+  color: #fff;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: #e8eaf6;
+}
+
+/* ── Legend (unused rule kept for future use) ─────────────────── */
+#spacer {
+  height: 0;
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
